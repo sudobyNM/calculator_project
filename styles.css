@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+  background-color: rgb(127, 118, 100);
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.output {
+  grid-column: 1 /span 4;
+  background-color: rgba(49, 67, 68, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+  color: blanchedalmond;
+  font-size: 2rem;
+}
+
+.output .previous-calc{
+  color: rgba(255, 255, 255, 0.889);
+  font-size: 1.3rem;
+}
+
+button{
+  cursor: pointer;
+  font-size: 1.5rem;
+  outline: none;
+ 
+}
+
+button:hover{
+  background-color: rgba(177, 238, 242, 0.902);
+  outline: none;border: none;
+}
+
+
+button[data-operation]{
+  background-color: rgb(26, 27, 28);
+  color: rgb(232, 152, 32);
+  font-size: 2rem;
+}
+
+button[data-operation]:hover{
+  background-color: rgba(177, 238, 242, 0.902);
+  color: rgb(26, 27, 28);
+}
+
+
+.s2{
+  grid-column: span 2;
+}
+
+button[data-clear]{
+  color: rgb(249, 111, 95);
+}
+
